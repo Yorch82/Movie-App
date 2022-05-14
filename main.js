@@ -23,8 +23,7 @@ function showMovies (data) {
     
     main.innerHTML ='';
 
-    data.forEach(movie => {
-        console.log(movie);
+    data.forEach(movie => {        
         const {title, poster_path, vote_average, overview} = movie;
         const movieElement = document.createElement('div');
         movieElement.classList.add('movie');
@@ -33,7 +32,7 @@ function showMovies (data) {
 
         <div class="movie-info">
             <h3>${title}</h3>
-            <span class="green">${vote_average}</span>
+            <span>${vote_average}</span>
         </div>
 
         <div class="overview">
